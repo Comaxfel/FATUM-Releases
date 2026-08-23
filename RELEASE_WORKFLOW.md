@@ -12,7 +12,13 @@ FATUM использует публичный репозиторий `Comaxfel/F
 
 ## Bootstrap 1.7.9
 
-Первоначальный bootstrap 1.7.9 оказался недостаточно надёжным: в некоторых desktop-layout обновление приложения проходило до 1.7.9, но постоянные `UPDATE_FATUM.cmd`, `RESTORE_FATUM.cmd`, `SAVE_MY_RESOURCES.cmd` могли не попасть в install root. Для распространения игрокам использовать исправленный `FATUM-Updater-Bootstrap-v1.7.9-r2.zip`, где постоянный updater устанавливается явным отдельным шагом после дельта-патча. Если пользователь уже обновился до 1.7.9, но `UPDATE_FATUM.cmd` отсутствует, не запускать патч 1.7.8→1.7.9 повторно; использовать `FATUM-Updater-Repair-v1.7.9.zip`.
+Первоначальные bootstrap 1.7.9 и r2 оказались недостаточно удобными для layout, где внешний каталог FATUM содержит вложенную папку `FATUM Desktop` с настоящим `FATUM.exe`: постоянный updater мог устанавливаться внутрь `FATUM Desktop`, поэтому пользователь не видел `UPDATE_FATUM.cmd` в основном внешнем каталоге.
+
+Для распространения игрокам использовать **только** `FATUM-Updater-Bootstrap-v1.7.9-r3.zip`. R3 после перехода 1.7.8→1.7.9 явно создаёт `UPDATE_FATUM.cmd`, `RESTORE_FATUM.cmd`, `SAVE_MY_RESOURCES.cmd` в основном внешнем каталоге FATUM и одновременно устанавливает updater engine рядом с реальным `FATUM.exe`.
+
+Если пользователь уже обновился до 1.7.9, но не видит `UPDATE_FATUM.cmd` в основном каталоге, не запускать патч 1.7.8→1.7.9 повторно. Использовать **`FATUM-Updater-Repair-v1.7.9-r2.zip`**. Repair r2 поддерживает как плоский layout с `FATUM.exe` в корне, так и вложенный `FATUM Desktop/FATUM.exe`.
+
+Старые `FATUM-Updater-Bootstrap-v1.7.9.zip`, `...-r2.zip` и `FATUM-Updater-Repair-v1.7.9.zip` больше не распространять.
 
 ## Что делать при новом патче
 
