@@ -2,8 +2,8 @@
   "format": "fatum-update-channel",
   "schemaVersion": 1,
   "channel": "stable",
-  "latestVersion": "1.7.14",
-  "updatedAt": "2026-08-24T17:36:00Z",
+  "latestVersion": "1.7.13",
+  "updatedAt": "2026-08-24T17:43:00Z",
   "packages": [
     {
       "from": "1.7.8",
@@ -39,13 +39,6 @@
       "url": "https://raw.githubusercontent.com/Comaxfel/FATUM-Releases/main/patches/FATUM-update-1.7.12-to-1.7.13.zip",
       "sha256": "839e8f675454a8810bca50a517ddbb8465c3f538e05314c68607e2f34f3a1e40",
       "size": 10577
-    },
-    {
-      "from": "1.7.13",
-      "to": "1.7.14",
-      "url": "https://raw.githubusercontent.com/Comaxfel/FATUM-Releases/main/patches/FATUM-update-1.7.13-to-1.7.14.zip",
-      "sha256": "55ebb9935540ff670accdc179bd90a10bd60cb2cb7db7626ba2359857ac5efa0",
-      "size": 190307
     }
   ]
 }
